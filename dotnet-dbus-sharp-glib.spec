@@ -10,10 +10,11 @@ License:	MIT
 Group:		Libraries
 Source0:	http://github.com/downloads/mono/dbus-sharp/%{module}-%{version}.tar.gz
 # Source0-md5:	2284293316eb3a89f0f78798b8a24418
+Patch0:		%{name}-monodir.patch
 #URL:		http://www.ndesk.org/DBusSharp
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	dotnet-dbus-sharp-devel >= 1:0.7
+BuildRequires:	dotnet-dbus-sharp-devel >= 1:0.7.0
 BuildRequires:	mono-csharp >= 1.1.13
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
@@ -45,6 +46,7 @@ Pliki programistyczne biblioteki .NET ndesk D-BUS GLib.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
