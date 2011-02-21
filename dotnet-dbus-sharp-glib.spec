@@ -65,8 +65,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING README
-%{_libdir}/mono/gac/dbus-sharp-glib
-%{_libdir}/mono/dbus-sharp-glib-1.0
+%{_prefix}/lib/mono/gac/dbus-sharp-glib
+%{_prefix}/lib/mono/dbus-sharp-glib-1.0
 
 %files devel
 %defattr(644,root,root,755)
