@@ -13,6 +13,7 @@ Source0:	http://github.com/downloads/mono/dbus-sharp/%{module}-%{version}.tar.gz
 #URL:		http://www.ndesk.org/DBusSharp
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	dotnet-dbus-sharp-devel >= 1:0.7
 BuildRequires:	mono-csharp >= 1.1.13
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
