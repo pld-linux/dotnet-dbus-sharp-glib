@@ -17,15 +17,6 @@ BuildRequires:	mono-csharp >= 1.1.13
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	rpmbuild(monoautodeps)
-# DllImport, not detected by monoautodeps
-%ifarch %{x8664} ia64 ppc64 s390x
-Requires:	libglib-2.0.so.0()(64bit)
-%else
-Requires:	libglib-2.0.so.0
-%endif
-Obsoletes:	ndesk-dbus-glib
-ExclusiveArch:	%{ix86} %{x8664} arm hppa ia64 ppc s390 s390x sparc sparcv9
-ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,7 +34,7 @@ Summary:	Development files for ndesk D-BUS GLib .NET library
 Summary(pl.UTF-8):	Pliki programistyczne biblioteki .NET ndesk D-BUS GLib
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	dotnet-ndesk-dbus-sharp-devel >= 0.4
+Requires:	dotnet-dbus-sharp-devel >= 0.4
 
 %description devel
 Development files for ndesk D-BUS GLib .NET library.
