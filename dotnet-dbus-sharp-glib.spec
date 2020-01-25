@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.mono
 %define		module	dbus-sharp-glib
 
 Summary:	D-Bus for .NET - GLib integration module
