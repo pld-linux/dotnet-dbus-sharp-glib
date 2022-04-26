@@ -4,7 +4,7 @@ Summary:	D-Bus for .NET - GLib integration module
 Summary(pl.UTF-8):	D-Bus dla .NET - moduł integrujący z GLib
 Name:		dotnet-%{module}
 Version:	0.6.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/mono/dbus-sharp-glib/releases
