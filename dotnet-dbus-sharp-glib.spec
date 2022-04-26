@@ -21,6 +21,9 @@ BuildRequires:	rpmbuild(macros) >= 2.015
 Requires:	mono >= 1.1.13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# no native code
+%define		_enable_debug_packages	0
+
 %description
 dbus-sharp-glib is a fork of ndesk-dbus-glib, which provides GLib main
 loop integration for Managed D-Bus.
